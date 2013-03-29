@@ -13,7 +13,7 @@ public class Custom_Zombie extends ModelBase
 		LeftFoot.rotateAngleX = 0F;
 		LeftFoot.rotateAngleY = 0F;
 		LeftFoot.rotateAngleZ = 0F;
-		LeftFoot.mirror = false;
+		LeftFoot.mirror = true;
 		RightFoot = new ModelRenderer(this, 0, 0);
 		RightFoot.addBox(0F, 0F, 0F, 4, 12, 4, 0F);
 		RightFoot.setRotationPoint(-4F, 12F, -2F);
@@ -28,14 +28,14 @@ public class Custom_Zombie extends ModelBase
 		Body1.rotateAngleY = 0F;
 		Body1.rotateAngleZ = 0F;
 		Body1.mirror = false;
-		Body2 = new ModelRenderer(this, 16, 10);
+		Body2 = new ModelRenderer(this, 17, 10);
 		Body2.addBox(0F, 0F, 0F, 7, 1, 4, 0F);
 		Body2.setRotationPoint(-3F, 10F, -2F);
 		Body2.rotateAngleX = 0F;
 		Body2.rotateAngleY = 0F;
 		Body2.rotateAngleZ = 0F;
 		Body2.mirror = false;
-		Body3 = new ModelRenderer(this, 16, 9);
+		Body3 = new ModelRenderer(this, 17, 9);
 		Body3.addBox(0F, 0F, 0F, 7, 1, 4, 0F);
 		Body3.setRotationPoint(-3F, 9F, -2F);
 		Body3.rotateAngleX = 0F;
@@ -49,28 +49,28 @@ public class Custom_Zombie extends ModelBase
 		Body4.rotateAngleY = 0F;
 		Body4.rotateAngleZ = 0F;
 		Body4.mirror = false;
-		Body5 = new ModelRenderer(this, 16, 7);
+		Body5 = new ModelRenderer(this, 17, 7);
 		Body5.addBox(0F, 0F, 0F, 7, 1, 4, 0F);
 		Body5.setRotationPoint(-4F, 7F, -2F);
 		Body5.rotateAngleX = 0F;
 		Body5.rotateAngleY = 0F;
 		Body5.rotateAngleZ = 0F;
 		Body5.mirror = false;
-		Body6 = new ModelRenderer(this, 16, 6);
+		Body6 = new ModelRenderer(this, 18, 6);
 		Body6.addBox(0F, 0F, 0F, 6, 1, 4, 0F);
 		Body6.setRotationPoint(-4F, 6F, -2F);
 		Body6.rotateAngleX = 0F;
 		Body6.rotateAngleY = 0F;
 		Body6.rotateAngleZ = 0F;
 		Body6.mirror = false;
-		Body7 = new ModelRenderer(this, 16, 5);
+		Body7 = new ModelRenderer(this, 19, 5);
 		Body7.addBox(0F, 0F, 0F, 5, 1, 4, 0F);
 		Body7.setRotationPoint(-3F, 5F, -2F);
 		Body7.rotateAngleX = 0F;
 		Body7.rotateAngleY = 0F;
 		Body7.rotateAngleZ = 0F;
 		Body7.mirror = false;
-		Body8 = new ModelRenderer(this, 16, 4);
+		Body8 = new ModelRenderer(this, 18, 4);
 		Body8.addBox(0F, 0F, 0F, 6, 1, 4, 0F);
 		Body8.setRotationPoint(-3F, 4F, -2F);
 		Body8.rotateAngleX = 0F;
@@ -98,7 +98,7 @@ public class Custom_Zombie extends ModelBase
 		Body11.rotateAngleY = 0F;
 		Body11.rotateAngleZ = 0F;
 		Body11.mirror = false;
-		Body12 = new ModelRenderer(this, 16, 0);
+		Body12 = new ModelRenderer(this, 17, 0);
 		Body12.addBox(0F, 0F, 0F, 7, 1, 4, 0F);
 		Body12.setRotationPoint(-3F, 0F, -2F);
 		Body12.rotateAngleX = 0F;
@@ -112,7 +112,7 @@ public class Custom_Zombie extends ModelBase
 		LeftArm.rotateAngleY = 0F;
 		LeftArm.rotateAngleZ = 0F;
 		LeftArm.mirror = false;
-		RightArm = new ModelRenderer(this, 0, 16);
+		RightArm = new ModelRenderer(this, 40, 0);
 		RightArm.addBox(0F, 0F, 0F, 4, 10, 4, 0F);
 		RightArm.setRotationPoint(4F, 0F, -2F);
 		RightArm.rotateAngleX = 0F;
@@ -168,6 +168,13 @@ public class Custom_Zombie extends ModelBase
 		Head.rotateAngleY = 0F;
 		Head.rotateAngleZ = 0F;
 		Head.mirror = false;
+		Shape3 = new ModelRenderer(this, 16, 26);
+		Shape3.addBox(0F, 0F, 0F, 1, 2, 1, 0F);
+		Shape3.setRotationPoint(4F, 10F, -2F);
+		Shape3.rotateAngleX = 0F;
+		Shape3.rotateAngleY = 0F;
+		Shape3.rotateAngleZ = 0F;
+		Shape3.mirror = false;
 	}
 	
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
@@ -197,6 +204,7 @@ public class Custom_Zombie extends ModelBase
 		LeftFingers.render(f5);
 		LeftThumb.render(f5);
 		Head.render(f5);
+		Shape3.render(f5);
 	}
 	
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5)
@@ -228,4 +236,5 @@ public class Custom_Zombie extends ModelBase
 	public ModelRenderer LeftFingers;
 	public ModelRenderer LeftThumb;
 	public ModelRenderer Head;
+	public ModelRenderer Shape3;
 }

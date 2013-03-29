@@ -1,5 +1,6 @@
 package com.zombiesurvival.mod;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ public class ModZombieEgg extends Item{
 	{
 		super(i);
 		maxStackSize = 64;
+		this.setCreativeTab(CreativeTabs.tabMisc);
 	}
 
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)

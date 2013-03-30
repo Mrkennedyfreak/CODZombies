@@ -37,12 +37,10 @@ public class ModelZombie extends ModelBase
     textureWidth = 64;
     textureHeight = 32;
     
-      Left_Foot.mirror = true;
       Left_Foot = new ModelRenderer(this, 0, 0);
       Left_Foot.addBox(0F, 0F, 0F, 4, 12, 4);
       Left_Foot.setRotationPoint(0F, 12F, -2F);
       Left_Foot.setTextureSize(64, 32);
-      Left_Foot.mirror = true;
       setRotation(Left_Foot, 0F, 0F, 0F);
       Left_Foot.mirror = false;
       Right_Foot = new ModelRenderer(this, 0, 0);

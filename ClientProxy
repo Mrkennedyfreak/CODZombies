@@ -1,7 +1,0 @@
-package com.zombiesurvival.mod;
-import com.zombiesurvival.mod.CommonProxy;
-import net.minecraftforge.client.MinecraftForgeClient;
-public class ClientProxy extends CommonProxy {
-        
-public void registerRenderInformation(){
-}}

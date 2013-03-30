@@ -30,4 +30,7 @@ public void addNames(){ //For adding Item's ingame names
 }
 public void addRecipes(){ //For adding your Item's recipes
 }
+public void registerRenderThings() {
+	
+}
 }
